@@ -1,0 +1,30 @@
+# 🚖 Uber Trip Data Analysis using PySpark
+
+# Core data science & visualization packages
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Machine learning (optional, for KMeans extension)
+scikit-learn>=1.0.0
+
+# Advanced/interactive visualization (optional)
+plotly>=5.0.0
+
+# Big Data Processing
+# PySpark is required for main analysis (requires Java 8+)
+pyspark>=4.0.0
+
+# (Optional) Python alternatives to PySpark for experimentation
+dask>=2025.7.0
+polars>=1.31.0
+modin>=0.34.0
+
+# (Optional) Deep learning (uncomment if needed)
+# torch>=1.9.0
+# tensorflow>=2.6.0

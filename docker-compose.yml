@@ -1,0 +1,18 @@
+services:
+  zookeeper:
+    image: zookeeper:3.7
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+
+  hbase:
+    image: harisekhon/hbase
+    container_name: hbase
+    ports:
+      - "16010:16010"   # Web UI
+      - "9090:9090"     # Thrift API
+    environment:
+      - ZOOKEEPER_QUORUM=zookeeper
+    depends_on:
+      - zookeeper
+
